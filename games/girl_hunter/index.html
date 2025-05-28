@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    #game {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+
+  <script>
+    // Sélecteur du conteneur où sera injecté l'émulateur
+    EJS_player = "#game";
+
+    // Nom du core RetroArch à utiliser pour Game Boy
+    EJS_core = "gambatte"; // core Game Boy/Game Boy Color recommandé
+
+    // URL vers les données nécessaires à EmulatorJS (loader, assets)
+    EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+
+    // URL publique vers votre ROM .gb ou .zip
+    EJS_gameUrl = "https://arkowne.github.io/game_collection/games/girl_hunter/rom/girl_hunter.gba";
+  </script>
+
+  <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+</body>
+</html>
